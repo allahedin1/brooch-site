@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Брошь — авторские украшения ручной работы</title>
+  <title>Броши от Елены — авторские украшения ручной работы</title>
+  <meta name="description"
+    content="Авторские броши ручной работы из полимерной глины, кожи и кристаллов. Каждое изделие уникально. Доставка по России.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
     rel="stylesheet">
@@ -26,8 +30,8 @@
       --espresso: #2E1608;
       --white: #FAF5EE;
       --text: #2A1806;
-      --muted: #8A6E54;
-      --gold: #BF9650;
+      --muted: #6B5040;
+      --gold: #9E7A35;
     }
 
     html {
@@ -104,7 +108,7 @@
     }
 
     .hero {
-      min-height: 100vh;
+      min-height: auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding-top: 15px;
@@ -119,7 +123,6 @@
 
     .hero-image {
       min-height: calc(100vh - 110px);
-      max-height: 800px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -264,6 +267,20 @@
       .hero-text {
         padding: 40px 24px 40px !important;
         text-align: center !important;
+      }
+    }
+
+    /* Очень узкие экраны */
+    @media (max-width: 480px) {
+      .hero-image {
+        min-height: 320px;
+      }
+    }
+
+    /* Для тех, кто включает "версия для ПК" на телефоне */
+    @media (max-width: 768px) and (min-resolution: 2dppx) {
+      .hero {
+        min-height: auto;
       }
     }
 
@@ -770,7 +787,7 @@
       .hero-image img {
         width: 100%;
         height: 100%;
-        max-height: 800px;
+        max-height: 100vh;
         object-fit: cover;
         /* будет заполнять пространство */
         object-position: center;
@@ -1064,123 +1081,127 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-text">
-      <p class="hero-eyebrow">Авторские украшения · г. Октябрьский, Башкортостан</p>
-      <h1 class="hero-title">Каждая брошь —<br><em>маленькая история</em><br>в цветах и бисере</h1>
-      <p class="hero-desc">Создаю броши из полимерной глины, кожи и кристаллов. Каждое изделие уникально — никаких
-        фабричных копий, только живой труд рук.</p>
+  <main>
 
-      <div class="hero-buttons">
-        <a class="btn-primary" href="#catalog">Смотреть каталог</a>
-        <a class="btn-outline" href="#contact">Написать мастеру</a>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Авторские украшения · г. Октябрьский, Башкортостан</p>
+        <h1 class="hero-title">Каждая брошь —<br><em>маленькая история</em><br>в цветах и бисере</h1>
+        <p class="hero-desc">Создаю броши в технике плетения из полимерной глины, бисера и бусин. Каждое изделие
+          уникально — никаких
+          фабричных копий, только ручная работа.</p>
+
+        <div class="hero-buttons">
+          <a class="btn-primary" href="#catalog">Смотреть каталог</a>
+          <a class="btn-outline" href="#contact">Написать мастеру</a>
+        </div>
       </div>
+
+      <div class="hero-image">
+        <picture>
+          <source media="(max-width: 768px)" srcset="brooches-mobile.webp">
+          <img src="brooches.webp" alt="Коллекция брошей ручной работы" fetchpriority="high">
+        </picture>
+      </div>
+    </section>
+
+    <!-- CATALOG -->
+    <div class="mobile-divider">
+      <svg viewBox="0 0 400 60" xmlns="http://www.w3.org/2000/svg">
+        <!-- левая ветвь -->
+        <path d="M10,30 C30,10 50,10 70,30 C50,50 30,50 10,30Z" fill="none" stroke="#BF9650" stroke-width="1"
+          opacity="0.7" />
+        <path d="M70,30 C90,10 110,10 130,30" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.6" />
+        <path d="M80,20 C85,8 95,5 100,12" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.5" />
+        <path d="M80,40 C85,52 95,55 100,48" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.5" />
+
+        <!-- центральный ромб -->
+        <path d="M200,14 L214,30 L200,46 L186,30 Z" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.7" />
+        <path d="M200,20 L208,30 L200,40 L192,30 Z" fill="#BF9650" opacity="0.15" />
+        <path d="M174,30 Q182,22 186,30" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.6" />
+        <path d="M226,30 Q218,22 214,30" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.6" />
+        <path d="M174,30 Q182,38 186,30" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.6" />
+        <path d="M226,30 Q218,38 214,30" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.6" />
+
+        <!-- правая ветвь (зеркало) -->
+        <path d="M390,30 C370,10 350,10 330,30 C350,50 370,50 390,30Z" fill="none" stroke="#BF9650" stroke-width="1"
+          opacity="0.7" />
+        <path d="M330,30 C310,10 290,10 270,30" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.6" />
+        <path d="M320,20 C315,8 305,5 300,12" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.5" />
+        <path d="M320,40 C315,52 305,55 300,48" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.5" />
+
+        <!-- точки-акценты -->
+        <circle cx="130" cy="30" r="2.5" fill="#BF9650" opacity="0.5" />
+        <circle cx="270" cy="30" r="2.5" fill="#BF9650" opacity="0.5" />
+        <circle cx="155" cy="20" r="1.5" fill="#BF9650" opacity="0.35" />
+        <circle cx="245" cy="20" r="1.5" fill="#BF9650" opacity="0.35" />
+        <circle cx="155" cy="40" r="1.5" fill="#BF9650" opacity="0.35" />
+        <circle cx="245" cy="40" r="1.5" fill="#BF9650" opacity="0.35" />
+      </svg>
     </div>
 
-    <div class="hero-image">
-      <picture>
-        <source media="(max-width: 768px)" srcset="brooches-mobile.webp">
-        <img src="brooches.webp" alt="Коллекция брошей ручной работы">
-      </picture>
-    </div>
-  </section>
+    <section id="catalog">
+      <div class="divider">
+        <h2 class="divider-title">Каталог украшений</h2>
+        <p class="divider-sub">Нажмите на брошь, чтобы узнать подробнее</p>
+      </div>
+      <div class="catalog catalog-grid" id="catalogGrid"></div>
+    </section>
 
-  <!-- CATALOG -->
-  <div class="mobile-divider">
-    <svg viewBox="0 0 400 60" xmlns="http://www.w3.org/2000/svg">
-      <!-- левая ветвь -->
-      <path d="M10,30 C30,10 50,10 70,30 C50,50 30,50 10,30Z" fill="none" stroke="#BF9650" stroke-width="1"
-        opacity="0.7" />
-      <path d="M70,30 C90,10 110,10 130,30" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.6" />
-      <path d="M80,20 C85,8 95,5 100,12" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.5" />
-      <path d="M80,40 C85,52 95,55 100,48" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.5" />
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/10.webp" alt="Броши мастера">
+      </div>
+      <div class="about-text">
+        <p class="about-eyebrow" style="color:var(--caramel)">О мастере</p>
+        <h2 class="about-title">Влюблена в броши с первого стежка</h2>
+        <p class="about-body">
+          Меня зовут Елена, я из города Октябрьский (Республика Башкортостан). Создаю авторские броши из полимерной
+          глины,
+          кожи и кристаллов — каждое изделие собирается вручную с любовью к деталям.<br><br>Вдохновляюсь природой:
+          цветами, осенними красками, игрой света в бисере. Принимаю индивидуальные заказы — напишите мне, и мы подберем
+          украшение специально для вас.<br><br>Доставка по всей России · Самовывоз в г. Октябрьский
+        </p>
+      </div>
+    </section>
 
-      <!-- центральный ромб -->
-      <path d="M200,14 L214,30 L200,46 L186,30 Z" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.7" />
-      <path d="M200,20 L208,30 L200,40 L192,30 Z" fill="#BF9650" opacity="0.15" />
-      <path d="M174,30 Q182,22 186,30" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.6" />
-      <path d="M226,30 Q218,22 214,30" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.6" />
-      <path d="M174,30 Q182,38 186,30" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.6" />
-      <path d="M226,30 Q218,38 214,30" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.6" />
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <p class="contact-label">Связаться со мной</p>
+      <h2 class="contact-title">Заказать или задать вопрос</h2>
+      <p class="contact-sub">Отвечаю в течение нескольких часов · Индивидуальные заказы приветствуются</p>
 
-      <!-- правая ветвь (зеркало) -->
-      <path d="M390,30 C370,10 350,10 330,30 C350,50 370,50 390,30Z" fill="none" stroke="#BF9650" stroke-width="1"
-        opacity="0.7" />
-      <path d="M330,30 C310,10 290,10 270,30" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.6" />
-      <path d="M320,20 C315,8 305,5 300,12" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.5" />
-      <path d="M320,40 C315,52 305,55 300,48" fill="none" stroke="#BF9650" stroke-width="1" opacity="0.5" />
+      <div class="contact-links">
+        <a class="contact-link" href="https://vk.ru/shmelevaya" target="_blank">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.586-1.496c.598-.189 1.365 1.26 2.179 1.815.615.418 1.082.326 1.082.326l2.17-.03s1.136-.071.597-1.598c-.044-.123-.312-.66-1.603-1.865-1.35-1.26-1.169-1.056.457-3.236.99-1.32 1.385-2.125 1.261-2.47-.118-.328-.84-.241-.84-.241l-2.44.015s-.181-.025-.315.057c-.132.08-.216.267-.216.267s-.384 1.023-.895 1.893c-1.08 1.834-1.512 1.931-1.688 1.817-.41-.265-.308-1.065-.308-1.632 0-1.776.269-2.517-.525-2.71-.264-.063-.457-.105-1.132-.112-.866-.009-1.598.003-2.013.206-.276.134-.489.433-.359.45.16.022.522.098.715.36.248.34.24 1.104.24 1.104s.143 2.09-.333 2.35c-.327.176-.775-.183-1.737-1.827-.493-.852-.866-1.795-.866-1.795s-.072-.18-.202-.277c-.157-.117-.376-.154-.376-.154l-2.32.015s-.348.01-.476.161C4.087 8.09 4.2 8.43 4.2 8.43s1.816 4.25 3.872 6.39c1.886 1.96 4.026 1.83 4.026 1.83l1.687-.009z" />
+          </svg>
+          ВКонтакте
+        </a>
 
-      <!-- точки-акценты -->
-      <circle cx="130" cy="30" r="2.5" fill="#BF9650" opacity="0.5" />
-      <circle cx="270" cy="30" r="2.5" fill="#BF9650" opacity="0.5" />
-      <circle cx="155" cy="20" r="1.5" fill="#BF9650" opacity="0.35" />
-      <circle cx="245" cy="20" r="1.5" fill="#BF9650" opacity="0.35" />
-      <circle cx="155" cy="40" r="1.5" fill="#BF9650" opacity="0.35" />
-      <circle cx="245" cy="40" r="1.5" fill="#BF9650" opacity="0.35" />
-    </svg>
-  </div>
+        <a class="contact-link" href="https://wa.me/79177470216" target="_blank">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path
+              d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+          </svg>
+          WhatsApp
+        </a>
+        <a class="contact-link" href="https://t.me/ElenaBroshi" target="_blank">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 5L2 12.5l7 1M21 5l-4.5 15-4.5-8.5M21 5L9 13.5m0 0V19l3-2.5" />
+          </svg>
+          Telegram
+        </a>
+      </div>
+    </section>
 
-  <section id="catalog">
-    <div class="divider">
-      <h2 class="divider-title">Каталог украшений</h2>
-      <p class="divider-sub">Нажмите на брошь, чтобы узнать подробнее</p>
-    </div>
-    <div class="catalog catalog-grid" id="catalogGrid"></div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="img/10.webp" alt="Броши мастера">
-    </div>
-    <div class="about-text">
-      <p class="about-eyebrow" style="color:var(--caramel)">О мастере</p>
-      <h2 class="about-title">Влюблена в броши с первого стежка</h2>
-      <p class="about-body">
-        Меня зовут Елена, я из города Октябрьский (Республика Башкортостан). Создаю авторские броши в технике плетения,
-        вышивания из полимерной глины,
-        бисера и бусин — каждое изделие собирается вручную с любовью к деталям.<br><br>Вдохновляюсь природой:
-        цветами, осенними красками, игрой света в бисере. Принимаю индивидуальные заказы — напишите мне, и мы подберем
-        украшение специально для вас.<br><br>Доставка по всей России · Самовывоз в г. Октябрьский
-      </p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <p class="contact-label">Связаться со мной</p>
-    <h2 class="contact-title">Заказать или задать вопрос</h2>
-    <p class="contact-sub">Отвечаю в течение нескольких часов · Индивидуальные заказы приветствуются</p>
-
-    <div class="contact-links">
-      <a class="contact-link" href="https://vk.ru/shmelevaya" target="_blank">
-        <svg width="44" height="44" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.586-1.496c.598-.189 1.365 1.26 2.179 1.815.615.418 1.082.326 1.082.326l2.17-.03s1.136-.071.597-1.598c-.044-.123-.312-.66-1.603-1.865-1.35-1.26-1.169-1.056.457-3.236.99-1.32 1.385-2.125 1.261-2.47-.118-.328-.84-.241-.84-.241l-2.44.015s-.181-.025-.315.057c-.132.08-.216.267-.216.267s-.384 1.023-.895 1.893c-1.08 1.834-1.512 1.931-1.688 1.817-.41-.265-.308-1.065-.308-1.632 0-1.776.269-2.517-.525-2.71-.264-.063-.457-.105-1.132-.112-.866-.009-1.598.003-2.013.206-.276.134-.489.433-.359.45.16.022.522.098.715.36.248.34.24 1.104.24 1.104s.143 2.09-.333 2.35c-.327.176-.775-.183-1.737-1.827-.493-.852-.866-1.795-.866-1.795s-.072-.18-.202-.277c-.157-.117-.376-.154-.376-.154l-2.32.015s-.348.01-.476.161C4.087 8.09 4.2 8.43 4.2 8.43s1.816 4.25 3.872 6.39c1.886 1.96 4.026 1.83 4.026 1.83l1.687-.009z" />
-        </svg>
-        ВКонтакте
-      </a>
-
-      <a class="contact-link" href="https://wa.me/79177470216" target="_blank">
-        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path
-            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-        </svg>
-        WhatsApp
-      </a>
-      <a class="contact-link" href="https://t.me/+79177470216" target="_blank">
-        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M21 5L2 12.5l7 1M21 5l-4.5 15-4.5-8.5M21 5L9 13.5m0 0V19l3-2.5" />
-        </svg>
-        Telegram
-      </a>
-    </div>
-  </section>
-
+  </main>
   <footer>
     © 2026 Броши от Елены · г. Октябрьский, Республика Башкортостан · Доставка по России &nbsp;·&nbsp; Сделано <a
-      href="https://t.me/fecva" style="color:var(--caramel);text-decoration:none;">@fecva</a>
+      href="https://t.me/fecva" style="color:var(--sand);text-decoration:underline;">@fecva</a> &lt;3
   </footer>
 
   <!-- MODAL -->
@@ -1251,7 +1272,7 @@
       },
       {
         id: 6,
-        name: "Янтарный рассвет",
+        name: "Золотой рассвет",
         tag: "Полимерная глина",
         desc: "Три розы — белая, лимонная и желтая — с перламутровыми бусинами и бронзовыми листьями. Светлый и радостный образ.",
         longDesc: "Брошь с белой, ярко-оранжевой и нежно-жёлтой розами из полимерной глины. Декор: жемчужный бисер, янтарные кристаллы, зелёные нефритовые листочки, бронзовые элементы. Размер около 8 см.",
@@ -1280,7 +1301,7 @@
         id: 9,
         name: "Лавандовый букет",
         tag: "Бисер и кристаллы",
-        desc: "Изящный букет из нежно-фиолетовых кристаллов и бисера на зелёном стебле с бордовым бантиком.",
+        desc: "Изящный букет из нежно фиолетовых кристаллов и бисера на зелёном стебле с бордовым бантиком.",
         longDesc: "Брошь-букет из лавандового и сиреневого бисера, крупных фиолетовых риволи-кристаллов и серебристых бусин. Зелёный стебель перевязан бордовой лентой. Нежная и поэтичная. Размер около 8 см.",
         price: "1 500 ₽",
         img: "img/9.webp"
